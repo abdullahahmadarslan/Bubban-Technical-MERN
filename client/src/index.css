@@ -1,0 +1,986 @@
+/* importing web font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;1,300&display=swap');
+
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+:root {
+  --navbarColor: #646cff;
+  --darkColor: black;
+  --lightColor: white;
+}
+
+html {
+  font-size: 16px;
+  height: 100vh;
+}
+
+body {
+  background-color: var(--darkColor);
+  color: white;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+/* the body contains only 1 div i.e div with root id */
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+/* Navbar */
+/* main */
+.nav-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 20px;
+
+}
+
+/* left */
+
+.nav-logo:hover {
+  cursor: pointer;
+  color: var(--navbarColor);
+
+}
+
+.nav-logo-main {
+  text-decoration: none;
+  color: white;
+}
+
+/* right */
+.nav-right {
+  margin-right: 7rem;
+}
+
+.nav-right ul {
+  list-style: none;
+  display: flex;
+}
+
+.nav-right ul li {
+  margin: 0 1rem;
+}
+
+.nav-right ul li a {
+  text-decoration: none;
+  color: var(--lightColor);
+}
+
+.nav-right ul li a:hover {
+  color: var(--navbarColor);
+}
+
+.active {
+  color: var(--navbarColor) !important;
+  border-bottom: 2px solid;
+}
+
+/* footer */
+.footer {
+  width: 100vw;
+  background-color: var(--navbarColor);
+  height: 3rem;
+  font-size: large;
+  text-align: center;
+  line-height: 3rem;
+  margin-top: auto;
+  color: white;
+}
+
+/* home */
+.home-main {
+  width: 80vw;
+  height: auto;
+  /* border: 2px solid red;s */
+  margin: 0 auto;
+  margin-top: 10rem;
+}
+
+/* left and right main */
+.home-left-right {
+  display: flex;
+}
+
+/* left */
+.home-left {
+  width: 50%;
+}
+
+.home-left h1 p {
+  color: rgb(15, 223, 15);
+}
+
+.home-txt {
+  margin-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+
+.home-buttons a {
+  text-decoration: none;
+  color: var(--darkColor);
+}
+
+.home-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+  height: 3rem;
+  width: 8rem;
+  margin-right: 1rem;
+}
+
+.homebtn1 {
+  background-color: var(--navbarColor);
+}
+
+.homebtn1:hover {
+  background-color: var(--lightColor);
+  color: black;
+
+}
+
+.homebtn2 {
+  background-color: rgb(2, 168, 2);
+}
+
+.homebtn2:hover {
+  background-color: rgb(15, 223, 15);
+}
+
+/* right */
+.home-right {
+  width: 50%;
+}
+
+.home-right img {
+  display: block;
+  border-radius: 1rem;
+  margin-left: 2rem;
+}
+
+
+/* login */
+/* main */
+.login-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/* left */
+.login-left {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+
+}
+
+.login-img {
+  align-self: center;
+}
+
+.login-img img {
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 1rem;
+  margin-left: auto;
+}
+
+/* right */
+
+.login-right {
+  align-self: center;
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+.login-heading {
+  font-size: 2rem;
+  position: absolute;
+  top: 9rem;
+}
+
+.login-heading:hover {
+  color: var(--navbarColor);
+  cursor: pointer;
+}
+
+.login-right form {
+  display: block;
+  height: 40%;
+  margin-right: 3rem;
+  margin-bottom: 18rem;
+  margin-top: 8rem;
+  width: 40%;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+
+}
+
+.login-right form div {
+  margin: 2rem;
+  font-size: 18px;
+}
+
+.login-right form div input {
+  display: block;
+  width: 100%;
+  height: 2.8rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 10px;
+  /* Adjust this value to set the desired gap */
+}
+
+.login-right form div label {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.login-right form button {
+  display: flex;
+  margin-left: 2rem;
+  width: 83%;
+  line-height: 1.7rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 3rem;
+  background-color: rgb(2, 168, 2);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.login-right form button:hover {
+  background-color: rgb(15, 223, 15);
+
+}
+
+.login-text {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+.login-register {
+  text-decoration: none;
+  color: rgb(2, 168, 2);
+  font-weight: 600;
+}
+
+.login-register:hover {
+  color: rgb(15, 223, 15);
+
+}
+
+/* registration */
+/* main */
+.reg-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* left */
+.reg-left {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+}
+
+.reg-img {
+  align-self: center;
+}
+
+.reg-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+  margin-left: 5rem;
+}
+
+/* right */
+.reg-right {
+  align-self: center;
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+.reg-heading {
+  font-size: 2rem;
+  position: absolute;
+  top: 9rem;
+}
+
+.reg-heading:hover {
+  color: var(--navbarColor);
+  cursor: pointer;
+}
+
+.reg-right form {
+  display: block;
+  height: 31rem;
+  margin-right: 3rem;
+  margin-bottom: 26rem;
+  margin-top: 26rem;
+  width: 40%;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+
+}
+
+.reg-right form div {
+  margin: 2rem;
+  font-size: 18px;
+}
+
+.reg-right form div input {
+  display: block;
+  width: 100%;
+  height: 2.8rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 10px;
+  /* Adjust this value to set the desired gap */
+}
+
+.reg-right form div label {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.reg-right form button {
+  display: flex;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  width: 83%;
+  line-height: 1.7rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 3rem;
+  background-color: rgb(2, 168, 2);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.reg-right form button:hover {
+  background-color: rgb(15, 223, 15);
+
+}
+
+.reg-text {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+.reg-register {
+  text-decoration: none;
+  color: rgb(2, 168, 2);
+  font-weight: 600;
+}
+
+.reg-register:hover {
+  color: rgb(15, 223, 15);
+
+}
+
+/* contact */
+/* main */
+.contact-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* left */
+.contact-left {
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+}
+
+.contact-img {
+  align-self: center;
+}
+
+.contact-img img {
+  display: block;
+  width: 95%;
+  border-radius: 1rem;
+  margin-left: 5rem;
+}
+
+/* right */
+.contact-right {
+  align-self: center;
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+
+.contact-heading:hover {
+  color: var(--navbarColor);
+  cursor: pointer;
+}
+
+.contact-right form {
+  display: block;
+  height: auto;
+  margin-left: 2rem;
+  margin-bottom: 26rem;
+  margin-top: 26rem;
+  width: 40%;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+
+}
+
+.contact-right form div {
+  margin: 2rem;
+  font-size: 18px;
+}
+
+.contact-right form div input {
+  display: block;
+  width: 100%;
+  height: 2.8rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 10px;
+  /* Adjust this value to set the desired gap */
+}
+
+.contact-right form div textarea {
+  display: block;
+  width: 100%;
+  height: 8rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 10px;
+  /* Adjust this value to set the desired gap */
+}
+
+.contact-right form div label {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.contact-right form button {
+  display: flex;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  width: 83%;
+  line-height: 1.7rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 3rem;
+  background-color: rgb(2, 168, 2);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.contact-right form button:hover {
+  background-color: rgb(15, 223, 15);
+
+}
+
+
+/* aboutus */
+/* main */
+/* main */
+.aboutus-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* left */
+.aboutus-left {
+  width: 50vw;
+  height: 70vh;
+  margin-top: 10rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+}
+
+.aboutus-left h2 {
+  margin-bottom: 2rem;
+}
+
+.aboutus-left h2 p {
+  display: inline-block;
+  margin-left: 5px;
+  color: rgb(119, 228, 10)
+}
+
+
+.aboutus-left h1 {
+  margin-bottom: 1rem;
+}
+
+.aboutus-left a {
+  color: var(--lightColor);
+  text-decoration: none;
+  border: 2px solid var(--lightColor);
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  padding: 10px;
+}
+
+.aboutus-left .aboutusbtn-1 {
+  background-color: var(--navbarColor);
+  color: var(--darkColor);
+  font-weight: bolder;
+}
+
+.aboutus-left .aboutusbtn-1:hover {
+  background-color: var(--lightColor);
+  color: var(--darkColor);
+}
+
+.aboutus-left .aboutusbtn-2:hover {
+  background-color: var(--navbarColor);
+  color: var(--lightColor);
+  font-weight: bold;
+}
+
+/* right */
+.aboutus-right {
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+}
+
+.aboutus-img {
+  align-self: center;
+}
+
+.aboutus-img img {
+  display: block;
+  width: 80%;
+  height: auto;
+  border-radius: 1rem;
+  margin-right: auto;
+}
+
+/* Admin Navbar */
+.admin-nav {
+  display: flex;
+}
+
+/* left */
+.admin-nav-left {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  font-size: 20px;
+  height: 90vh;
+}
+
+
+.admin-nav-left {
+  margin-right: 7rem;
+}
+
+.admin-nav-left ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  margin-top: 6rem;
+  margin-left: 1rem;
+  margin-bottom: 4.5rem;
+  height: 80vh;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid var(--navbarColor);
+
+  border-radius: 1rem;
+}
+
+.admin-nav-left ul li {
+  margin: 0 1rem;
+}
+
+.admin-nav-left ul li a {
+  text-decoration: none;
+  color: var(--lightColor);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.admin-nav-left ul li a:hover {
+  color: var(--navbarColor);
+}
+
+/* right */
+.admin-nav-right {
+  border: 2px solid var(--navbarColor);
+  border-radius: 1rem;
+  width: 85%;
+  height: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+.active {
+  color: var(--navbarColor) !important;
+  border-bottom: 2px solid;
+}
+
+/* admin users table */
+.admin-users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-users-table th {
+  font-size: 1.2rem;
+}
+
+.admin-users-table th,
+.admin-users-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header Row */
+.admin-users-table th:first-child {
+  font-weight: bold;
+  border-top-left-radius: 1rem;
+}
+
+.admin-users-table th:last-child {
+  font-weight: bold;
+  border-top-right-radius: 1rem;
+}
+
+/* Rows */
+.admin-users-table tr:hover {
+  background-color: #312f2f;
+  cursor: crosshair;
+}
+
+/* Buttons */
+
+.admin-users-table td a {
+  text-decoration: none;
+}
+
+.admin-users-table button {
+  line-height: 1.7rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 2rem;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  width: 60%;
+}
+
+.admin-users-updatebtn {
+  background-color: rgb(2, 168, 2);
+}
+
+.admin-users-updatebtn:hover {
+  background-color: rgb(15, 223, 15);
+}
+
+.admin-users-deletebtn {
+  background-color: red;
+}
+
+.admin-users-deletebtn:hover {
+  background-color: rgb(245, 116, 116);
+}
+
+/* admin contacts */
+.admin-contacts {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-contacts th {
+  font-size: 1.2rem;
+}
+
+.admin-contacts th,
+.admin-contacts td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Header Row */
+.admin-contacts th:first-child {
+  font-weight: bold;
+  border-top-left-radius: 1rem;
+}
+
+.admin-contacts th:last-child {
+  font-weight: bold;
+  border-top-right-radius: 1rem;
+}
+
+/* Rows */
+.admin-contacts tr:hover {
+  background-color: #312f2f;
+  cursor: crosshair;
+}
+
+/* update */
+/* main */
+.update-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+/* right */
+.update-right {
+  align-self: center;
+  width: 50vw;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+.update-heading {
+  font-size: 2rem;
+  position: absolute;
+  top: 9rem;
+}
+
+.update-heading:hover {
+  color: var(--navbarColor);
+  cursor: pointer;
+}
+
+.update-right form {
+  display: block;
+  height: 36rem;
+  width: 100%;
+  background-color: white;
+  border-radius: 0.5rem;
+  color: black;
+  margin-top: 15rem;
+
+}
+
+.update-right form div {
+  margin: 2rem;
+  font-size: 18px;
+}
+
+.update-right form div input {
+  display: block;
+  width: 100%;
+  height: 2.8rem;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding-left: 10px;
+  /* Adjust this value to set the desired gap */
+}
+
+.update-right form div label {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.update-right form button {
+  display: flex;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+  width: 93%;
+  line-height: 1.7rem;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  height: 3rem;
+  background-color: rgb(2, 168, 2);
+  border: none;
+  border-radius: 5px;
+  font-weight: 600;
+  color: white;
+  font-size: 1rem;
+}
+
+.update-right form button:hover {
+  background-color: rgb(15, 223, 15);
+
+}
+
+.update-text {
+  margin-left: 2rem;
+  margin-top: 1rem;
+  color: black;
+}
+
+.update-register {
+  text-decoration: none;
+  color: rgb(2, 168, 2);
+  font-weight: 600;
+}
+
+.update-register:hover {
+  color: rgb(15, 223, 15);
+}
+
+.admin-update-text a {
+  text-decoration: none;
+  color: rgb(2, 168, 2);
+}
+
+.admin-update-text a:hover {
+  color: rgb(15, 223, 15);
+}
+
+/* services */
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+  height: auto;
+  width: 100vw;
+  margin-top: 4rem;
+
+}
+
+.service-main {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--navbarColor);
+  border-radius: 10px;
+  height: 22rem;
+  width: 26rem;
+  margin: 1rem 69px;
+
+}
+
+.service-main:hover {
+  background-color: #383838;
+  cursor: pointer;
+
+}
+
+.service-img {
+  /* height: 50%;
+  width: 50%; */
+  margin: auto;
+  margin-top: 9px;
+
+}
+
+.service-img img {
+  border-radius: 5px;
+}
+
+
+.service-center {
+  height: 10%;
+}
+
+.service-center p {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.service-heading {
+  height: 16%;
+}
+
+.service-heading {
+  margin: auto;
+}
+
+.service-description {
+  height: 20%;
+  margin-left: 1rem;
+  font-size: larger;
+}
