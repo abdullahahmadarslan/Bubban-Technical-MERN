@@ -76,7 +76,7 @@ export const AdminUsersEdit = () => {
             }
 
         } catch (error) {
-            alert(`error while registration : ${error}`);
+            console.log(`error while registration : ${error}`);
         }
 
     };

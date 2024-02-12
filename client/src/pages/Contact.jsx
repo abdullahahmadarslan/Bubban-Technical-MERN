@@ -90,7 +90,7 @@ export const Contact = () => {
                 toast.error(parsedServerRespone.errorDetails ? parsedServerRespone.errorDetails : parsedServerRespone.message);
             }
         } catch (error) {
-            alert(`error while sending message: ${error}`);
+            console.log(`error while sending message: ${error}`);
         }
     };
 

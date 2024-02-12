@@ -15,6 +15,7 @@ export const About = () => {
 
     return (
         <>
+
             <div className="aboutus-main">
                 {/* left side */}
                 <div className="aboutus-left">
@@ -69,6 +70,7 @@ export const About = () => {
                     </div>
                 </div>
             </div>
+
         </>
     );
 };

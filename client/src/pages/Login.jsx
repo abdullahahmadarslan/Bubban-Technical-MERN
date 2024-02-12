@@ -73,7 +73,7 @@ export const Login = () => {
                 toast.error(parsedServerRespone.errorDetails ? parsedServerRespone.errorDetails : parsedServerRespone.message);
             }
         } catch (error) {
-            alert(`error while login: ${error}`);
+            console.log(`error while login: ${error}`);
         }
     }
     return (
@@ -88,7 +88,6 @@ export const Login = () => {
                 {/* right side */}
 
                 <div className="login-right">
-                    <label htmlFor="email"><h1 className="login-heading">Login: </h1></label>
                     <form onSubmit={handleSubmit}>
                         {/* email */}
                         <div className="login-email">

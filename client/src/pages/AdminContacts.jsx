@@ -30,7 +30,7 @@ export const AdminContacts = () => {
                 toast.error(`Error While Getting Contacts From The Server`);
             }
         } catch (error) {
-            alert(`error while getting contacts from the backend. error:${error}`);
+            console.log(`error while getting contacts from the backend. error:${error}`);
         }
     };
 

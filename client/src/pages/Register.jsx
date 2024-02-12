@@ -71,7 +71,7 @@ export const Register = () => {
             }
 
         } catch (error) {
-            alert(`error while registration : ${error}`);
+            console.log(`error while registration : ${error}`);
         }
 
     };
@@ -88,7 +88,6 @@ export const Register = () => {
                 </div>
                 {/* right side */}
                 <div className="reg-right">
-                    <label htmlFor="name"><h1 className="reg-heading">Registration:</h1></label>
                     <form onSubmit={handleSubmit}>
                         {/* name */}
                         <div className="reg-name">

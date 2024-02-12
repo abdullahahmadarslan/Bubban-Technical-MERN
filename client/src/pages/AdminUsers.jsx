@@ -53,7 +53,7 @@ export const AdminUsers = () => {
                 toast.error(`User with Id:${userId} Not Found!`);
             }
         } catch (error) {
-            alert("Error While deleting user from the database");
+            console.log("Error While deleting user from the database");
         }
     };
 

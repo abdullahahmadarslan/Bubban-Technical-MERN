@@ -20,7 +20,7 @@ export const Services = () => {
             setServices(parsedServerResponse.allServices)
 
         } catch (error) {
-            alert("error while fetching services");
+            console.log("error while fetching services");
         }
     };
 

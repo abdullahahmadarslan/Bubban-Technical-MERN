@@ -31,6 +31,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  margin: 0;
 }
 
 /* Navbar */
@@ -242,7 +243,7 @@ body {
   margin-right: 3rem;
   margin-bottom: 18rem;
   margin-top: 8rem;
-  width: 40%;
+  width: 60%;
   background-color: white;
   border-radius: 0.5rem;
   color: black;
@@ -367,7 +368,7 @@ body {
   margin-right: 3rem;
   margin-bottom: 26rem;
   margin-top: 26rem;
-  width: 40%;
+  width: 60%;
   background-color: white;
   border-radius: 0.5rem;
   color: black;
@@ -487,7 +488,7 @@ body {
   margin-left: 2rem;
   margin-bottom: 26rem;
   margin-top: 26rem;
-  width: 40%;
+  width: 60%;
   background-color: white;
   border-radius: 0.5rem;
   color: black;
@@ -559,6 +560,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: auto;
 }
 
 /* left */
@@ -937,7 +939,7 @@ body {
   flex-direction: column;
   border: 3px solid var(--navbarColor);
   border-radius: 10px;
-  height: 22rem;
+  height: 25rem;
   width: 26rem;
   margin: 1rem 69px;
 
@@ -983,4 +985,180 @@ body {
   height: 20%;
   margin-left: 1rem;
   font-size: larger;
+}
+
+
+/* Handling responsiveness */
+@media only screen and (max-width: 1661px) {
+  .services-container {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .reg-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .reg-left {
+    margin-right: 10rem;
+  }
+}
+
+@media only screen and (max-width: 1470px) {
+  .login-img {
+    display: none;
+  }
+
+  .login-right {
+    width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 1260px) {
+  footer {
+    display: none;
+  }
+
+  .aboutus-img img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .aboutus-img {
+    margin-bottom: 29rem;
+  }
+
+  .aboutus-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aboutus-left {
+    width: auto;
+  }
+
+  .aboutus-right {
+    width: auto;
+  }
+
+  .contact-img img {
+    max-width: 80%;
+    height: auto;
+  }
+
+}
+
+/* navbar */
+@media only screen and (max-width: 1170px) {
+  .home-img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .nav-logo-main {
+    display: none;
+
+  }
+
+  .nav-right {
+    margin-right: 10rem;
+  }
+
+  .aboutus-img {
+    margin-top: 10rem;
+  }
+
+  .contact-left {
+    display: none;
+  }
+
+  .contact-right {
+    width: 100%;
+    margin-left: 10rem;
+  }
+
+  .reg-left {
+    display: none;
+  }
+
+  .reg-right {
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+}
+
+@media only screen and (max-width: 840px) {
+  .aboutus-img {
+    display: none;
+  }
+
+  .login-right {
+    margin-right: 10rem;
+
+  }
+}
+
+@media only screen and (max-width: 780px) {
+  .nav-right ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .nav-right {
+    margin-left: 3rem;
+  }
+
+  .home-main {
+    margin-top: 2rem;
+  }
+
+  .home-left-right {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .home-left {
+    width: auto;
+  }
+
+  .home-right {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: auto;
+  }
+
+  .home-right img {
+    width: 70%;
+
+  }
+}
+
+@media only screen and (max-width:649px) {
+  .contact-right {
+    margin-right: 6rem;
+    margin-left: 0;
+  }
+
+}
+
+@media only screen and (max-width: 448px) {
+  .aboutusbtn-1 {
+    display: block;
+  }
+
+  .aboutusbtn-2 {
+    display: block;
+  }
+
+  .aboutus-left a {
+    margin-bottom: 1rem;
+  }
+
 }
