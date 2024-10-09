@@ -31,7 +31,13 @@ Developed a full-stack MERN application with complete JWT authentication and an 
     npm install
     ```
 
-3. Create a `.env` file in the `server` directory with the necessary environment variables.
+3. Create a `.env` file in the `server` directory with the following environment variables:
+
+    ```plaintext
+    PORT
+    URI
+    PRIVATE_KEY
+    ```
 
 4. Run the server:
 
